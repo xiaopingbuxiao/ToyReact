@@ -130,8 +130,8 @@ class Game extends Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
+          {/* <div>{status}</div>
+          <ol>{moves}</ol> */}
         </div>
       </div>
     );
@@ -144,6 +144,9 @@ ToyReact.render(
   <Game />,
   document.body
 );
+
+// let game = <Game></Game>
+
 
 function calculateWinner(squares) {
   const lines = [
